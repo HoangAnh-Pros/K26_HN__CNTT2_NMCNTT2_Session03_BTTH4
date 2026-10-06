@@ -2,4 +2,25 @@
 Phần 1(phân tích):
 -Sự khác biệt về vai trò giữa Ram và storage 
 +Ram: là bộ nhớ tạm thời có thể dung để làm việc trực tiếp
-+storage: có 2 loại là SSD và HDD
++storage: có 2 loại là SSD và HDD đều là bộ nhớ dài hạn 
+-->Ram là lạm việc tại chỗ và storage là tủ chứa tài liệu nên Ram sẽ nhanh và thuận tiện hơn STorage và Storage sẽ chậm hơn 
+Phần 2: Thiết kế hệ thống lưu trữ trên ổ D:
+Vấn đề bẫy dữ liệu cũ: Không nên lưu ở C:\Windows\System32\Code của tôi vì ổ C dễ mất dữ liệu khi lỗi Win, thư mục System32 giới hạn quyền administrator, và tên chứa tiếng Việt/khoảng trắng gây lỗi khi chạy code.
+
+Quy tắc thiết kế: Sử dụng chuẩn kebab-case (chữ viết thường, nối bằng dấu -) và phân theo 3-4 cấp thư mục rõ ràng.
+
+Sơ đồ Cây thư mục (File Tree) trên ổ D:
+
+Plaintext
+D:\
+└── ptit-documents/
+    ├── 01-academic/
+    │   ├── basic-it/
+    │   │   └── assignments/
+    │   └── programming-fundamentals/
+    ├── 02-projects/
+    │   └── python-first-project/
+    │       ├── src/
+    │       ├── docs/
+    │       └── readme.md
+    └── 03-personal-learning/
