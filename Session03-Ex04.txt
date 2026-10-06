@@ -1,0 +1,5 @@
+4.Yêu cầu đầu ra
+Phần 1(phân tích):
+-Sự khác biệt về vai trò giữa Ram và storage 
++Ram: là bộ nhớ tạm thời có thể dung để làm việc trực tiếp
++storage: có 2 loại là SSD và HDD
